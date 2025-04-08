@@ -25,9 +25,16 @@
 		<meta property="og:type" content="website" />
 		<script>
 			const lang = navigator.language || navigator.userLanguage;
-			const alreadyRedirected = localStorage.getItem("lang-redirect");
+			const alreadyRedirected = localStorage.getItem("lang-redirect") === "true";
+			const visitedSpanish = document.referrer.includes("index-es.html") || localStorage.getItem("visited-spanish") === "true";
 		  
-			if (!alreadyRedirected && lang.startsWith("es")) {
+			// Save if Spanish version has been visited
+			if (window.location.pathname.includes("index-es.html")) {
+			  localStorage.setItem("visited-spanish", "true");
+			}
+		  
+			// Redirect only if first visit and Spanish not previously visited
+			if (!alreadyRedirected && !visitedSpanish && lang.startsWith("es")) {
 			  localStorage.setItem("lang-redirect", "true");
 			  window.location.href = "/index-es.html";
 			}
@@ -50,7 +57,7 @@
 					</ul>
 				</nav>
 				<div class="lang-switch" style="text-align:center; margin-top: 1em;">
-                    <a href="index.html">🇬🇧 English</a> | <a href="index-es.html">🇪🇸 Español</a>
+                    <a href="index.html">🇬🇧</a> | <a href="index-es.html">🇪🇸</a>
                 </div> 
 				<footer>
 					<ul class="icons">

@@ -23,6 +23,15 @@
 		<meta property="og:image" content="https://spanishsoc.com/images/social-preview.jpg" />
 		<meta property="og:url" content="https://spanishsoc.com/" />
 		<meta property="og:type" content="website" />
+		<script>
+			const lang = navigator.language || navigator.userLanguage;
+			const alreadyRedirected = localStorage.getItem("lang-redirect");
+		  
+			if (!alreadyRedirected && lang.startsWith("es")) {
+			  localStorage.setItem("lang-redirect", "true");
+			  window.location.href = "/index-es.html";
+			}
+		</script>		  
 	</head>
 	<body class="is-preload">
 
@@ -36,10 +45,13 @@
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">What We Do</a></li>
-						<li><a href="#three">Past Events</a></li>
+						<li><a href="#three">Recent Events</a></li>
 						<li><a href="#four">Contact</a></li>
 					</ul>
 				</nav>
+				<div class="lang-switch" style="text-align:center; margin-top: 1em;">
+                    <a href="index.html">🇬🇧 English</a> | <a href="index-es.html">🇪🇸 Español</a>
+                </div> 
 				<footer>
 					<ul class="icons">
 						<li><a href="https://www.instagram.com/cuspanishsoc" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -98,7 +110,7 @@
 										<article>
 											<a href="#" class="image"><img src="images/zoido.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Juan Ignacio Zoido, ex-ministro del Interior y ex-alcalde de Sevilla</h4>
+												<h4>Juan Ignacio Zoido, former Home Secretary and mayor of Seville</h4>
 												<p>Mr. Zoido, former Spanish Home Secretary and current MEP, gave a talk titled <em>Leadership in a transforming world: Spain and the EU</em>
 												where he shared his insights on the changing geopolitical landscape and gave our members advice on how to be diplomatic in an unfriendly world.</p>
 											</div>
@@ -106,7 +118,7 @@
 										<article>
 											<a href="#" class="image"><img src="images/embajador.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>José Pascual Marco, embajador de España para el Reino Unido</h4>
+												<h4>José Pascual Marco, ambassador of Spain to the UK</h4>
 												<p>Mr. Marco visited Cambridge and discussed the relationship between the UK and Spain,
 													his career in diplomacy, and expectations for the Spanish rotating presidency of the EU.</p>
 											</div>

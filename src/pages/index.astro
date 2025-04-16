@@ -1,0 +1,114 @@
+---
+import EnglishLayout from '../layouts/EnglishLayout.astro';
+---
+<EnglishLayout>
+  <div id="wrapper">
+    <div id="main">
+      <!-- One: Introduction Section -->
+      <section id="one">
+        <div class="image main" data-position="center">
+          <img src="/images/banner.jpg" alt="" />
+        </div>
+        <div class="container">
+          <header class="major">
+            <h2>¡Hola!</h2>
+            <p>Welcome to the Cambridge University Spanish Society.</p>
+          </header>
+          <p>
+            We aim to bring together Spanish students at the University of Cambridge and those interested in Spanish culture and language.
+          </p>
+        </div>
+      </section>
+
+      <!-- Two: What We Do Section -->
+      <section id="two">
+        <div class="container">
+          <h3>What We Do</h3>
+          <p>
+            We host social events, cultural celebrations, talks by distinguished speakers, and more. Our events are open to all members of the University of Cambridge, and we regularly collaborate with other societies.
+          </p>
+          <ul class="feature-icons">
+            <li class="icon solid fa-glass-cheers">Social Events</li>
+            <li class="icon solid fa-chalkboard-teacher">Talks</li>
+            <li class="icon solid fa-handshake">Collaboration with Other Societies</li>
+            <li class="icon solid fa-utensils">Dinners and Formals</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Three: Past Events Section -->
+      <section id="three">
+        <div class="container">
+          <h3>Past Events</h3>
+          <p>
+            As well as our frequent social events, we have hosted distinguished Spanish speakers in the past few years.
+            We are always looking to welcome leaders in their fields to inspire our members.
+            If you are interested in coming to Cambridge or know someone that might be, get in touch with us using the form below.
+          </p>
+          <div class="features">
+            <article>
+              <a href="#" class="image"><img src="/images/zoido.jpg" alt="" /></a>
+              <div class="inner">
+                <h4>Juan Ignacio Zoido, former Minister of the Interior and Mayor of Seville</h4>
+                <p>
+                  Mr. Zoido, former Spanish Home Secretary and current MEP, gave a talk titled <em>Leadership in a transforming world: Spain and the EU</em> where he shared his insights on the changing geopolitical landscape.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="/images/dana-valencia.png" alt="" /></a>
+              <div class="inner">
+                <h4>The Spanish Society raises 2,840€ for the floods in Valencia</h4>
+                <p>
+                  Cambridge University Spanish Society led fundraising efforts for the victims of the DANA floods in Valencia. The donation was made though the local charity Cáritas Diocesana de Valencia.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="/images/embajador.jpg" alt="" /></a>
+              <div class="inner">
+                <h4>José Pascual Marco, Ambassador of Spain to the UK</h4>
+                <p>
+                  Mr. Marco visited Cambridge and discussed the relationship between the UK and Spain, his career in diplomacy, and expectations for the Spanish rotating presidency of the EU.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Four: Contact Section -->
+      <section id="four">
+        <div class="container">
+          <h3>Contact Us</h3>
+          <p>
+            The best way to contact us as a student is to follow us on Instagram and join our WhatsApp group.
+            If you would like to explore other ways to collaborate with the society, fill in the form below and we will get in touch with you shortly.
+          </p>
+          <form method="POST" action="https://formspree.io/f/moveppjr">
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div class="col-12">
+                <input type="text" name="subject" placeholder="Subject" />
+              </div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Message" rows="6"></textarea>
+              </div>
+              <div class="col-12">
+                <ul class="actions">
+                  <li><input type="submit" class="primary" value="Send Message" /></li>
+                  <li><input type="reset" value="Reset" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</EnglishLayout>

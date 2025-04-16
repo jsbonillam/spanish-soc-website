@@ -1,0 +1,49 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const headData = {
+  title: "Cambridge University Spanish Society",
+  description: "Cambridge University Spanish Society: cultura, eventos y más.",
+  canonical: "https://spanishsoc.com/es/",
+  ogTitle: "Cambridge University Spanish Society",
+  ogDescription: "Celebrando la cultura española en Cambridge con eventos, charlas y cenas.",
+  ogImage: "https://spanishsoc.com/images/social-preview.jpg",
+  ogUrl: "https://spanishsoc.com/es/",
+  lang: "es"
+};
+---
+<BaseLayout {...headData}>
+  <!-- Spanish Header -->
+  <section id="header">
+    <header>
+      <span class="image avatar">
+        <img src="/images/logo.jpg" alt="" />
+      </span>
+      <h1 id="logo"><a href="#">Cambridge University Spanish Society</a></h1>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li><a href="#one" class="active">Sobre Nosotros</a></li>
+        <li><a href="#two">Actividades</a></li>
+        <li><a href="#three">Eventos Recientes</a></li>
+        <li><a href="#four">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" style="text-align:center; margin-top: 1em;">
+      <a href="/">English</a> | <a href="/es/">Español</a>
+    </div>
+  </section>
+
+  <!-- Page content slot (wrapper) -->
+  <slot />
+
+  <!-- Spanish Footer -->
+  <section id="footer">
+    <div class="container">
+      <ul class="copyright">
+        <li>&copy; Sociedad Española de la Universidad de Cambridge. Todos los derechos reservados.</li>
+        <li>Diseño: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

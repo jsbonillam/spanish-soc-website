@@ -1,0 +1,114 @@
+---
+import SpanishLayout from '../../layouts/SpanishLayout.astro';
+---
+<SpanishLayout>
+  <div id="wrapper">
+    <div id="main">
+      <!-- One: Introducción -->
+      <section id="one">
+        <div class="image main" data-position="center">
+          <img src="/images/banner.jpg" alt="" />
+        </div>
+        <div class="container">
+          <header class="major">
+            <h2>¡Hola!</h2>
+            <p>Bienvenido a la Sociedad Española de la Universidad de Cambridge.</p>
+          </header>
+          <p>
+            Nuestro objetivo es reunir a los estudiantes españoles de la Universidad de Cambridge y a todos los interesados en la cultura y el idioma español.
+          </p>
+        </div>
+      </section>
+
+      <!-- Two: Actividades -->
+      <section id="two">
+        <div class="container">
+          <h3>Actividades</h3>
+          <p>
+            Organizamos eventos sociales, celebraciones culturales, charlas con ponentes destacados y más.
+            Todos nuestros eventos están abiertos a los miembros de la Universidad de Cambridge y colaboramos regularmente con otras sociedades.
+          </p>
+          <ul class="feature-icons">
+            <li class="icon solid fa-glass-cheers">Eventos Sociales</li>
+            <li class="icon solid fa-chalkboard-teacher">Charlas</li>
+            <li class="icon solid fa-handshake">Colaboraciones con Otras Sociedades</li>
+            <li class="icon solid fa-utensils">Cenas y Formales</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Three: Eventos Recientes -->
+      <section id="three">
+        <div class="container">
+          <h3>Eventos Recientes</h3>
+          <p>
+            Además de nuestros frecuentes eventos sociales, hemos contado con la presencia de destacados ponentes españoles.
+            Si estás interesado en venir a Cambridge o conoces a alguien que podría estarlo, ponte en contacto con nosotros usando el formulario abajo.
+          </p>
+          <div class="features">
+            <article>
+              <a href="#" class="image"><img src="/images/zoido.jpg" alt="" /></a>
+              <div class="inner">
+                <h4>Juan Ignacio Zoido, exministro del Interior y exalcalde de Sevilla</h4>
+                <p>
+                  Zoido, exministro del Interior y actual eurodiputado, dio una charla titulada <em>Liderazgo en un mundo cambiante: España y la UE</em> donde compartió su visión sobre el panorama geopolítico actual.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="/images/dana-valencia.png" alt="" /></a>
+              <div class="inner">
+                <h4>La Sociedad Española recauda 2.840€ para la DANA en Valencia</h4>
+                <p>
+                  La Sociedad Española de la Universidad de Cambridge ha liderado una recaudación de fondos destinados a ayudar a los afectados por la DANA en Valencia. La donación se ha realizado a través de Cáritas Diocesana de Valencia.
+                </p>
+              </div>
+            </article>
+            <article>
+              <a href="#" class="image"><img src="/images/embajador.jpg" alt="" /></a>
+              <div class="inner">
+                <h4>José Pascual Marco, embajador de España en el Reino Unido</h4>
+                <p>
+                  El embajador Marco visitó Cambridge y habló sobre la relación entre España y el Reino Unido, su carrera diplomática y sus expectativas para la presidencia rotatoria del Consejo de la UE.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Four: Contacto -->
+      <section id="four">
+        <div class="container">
+          <h3>Contacto</h3>
+          <p>
+            La mejor forma de contactarnos como estudiante es seguirnos en Instagram y unirte a nuestro grupo de WhatsApp.
+            Si deseas colaborar con la sociedad o proponernos alguna actividad, rellena el formulario y nos pondremos en contacto contigo pronto.
+          </p>
+          <form method="POST" action="https://formspree.io/f/moveppjr">
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <input type="text" name="name" placeholder="Nombre" />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <input type="email" name="email" placeholder="Correo electrónico" />
+              </div>
+              <div class="col-12">
+                <input type="text" name="subject" placeholder="Asunto" />
+              </div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Mensaje" rows="6"></textarea>
+              </div>
+              <div class="col-12">
+                <ul class="actions">
+                  <li><input type="submit" class="primary" value="Enviar Mensaje" /></li>
+                  <li><input type="reset" value="Borrar" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</SpanishLayout>
